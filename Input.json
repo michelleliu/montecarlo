@@ -1,0 +1,45 @@
+{
+  "Params":
+  {
+    "Ncycle": 1000,
+    "Ninit": 200,
+    "Linit": true,
+    "Temp": 1.0,
+    "Iensemble": 5,
+    "Pdisp": 1,
+    "Pswap": 1,
+    "Pvol": 0.03,
+    "Prxn": 5,
+    "Nrxn": 1,
+    "Ntype": 2,
+    "Deltax": 0.5,
+    "Deltav": 40,
+    "Press/Fuga": 1,
+    "Box(1)": 10,
+    "Box(2)": 10
+  },
+  "Test":
+  {
+    "array": [ 1, 2, 3, 4 ]
+  },
+  "Nparts":
+  {
+    "_comment": "Nparts,MolFrac (Ntype)",
+    "array": [ 160, 1 , 100, 1 ]
+  },
+  "LJ":
+  {
+    "_comment":"Eps,Sig (Ntype*(Ntype+1)/2)",
+    "array":[ 1, 1, 0.75, 1, 1, 1 ]
+  },
+  "Rxns":
+  {
+    "_comment":"Nreactants,Nproducts (Nrxn)",
+    "array": [ 1, 1 ]
+  },
+  "Stoich":
+  {
+    "_comment":"Reactions,Stoich (Nrxn heading) (Nproducts + Nreactants)",
+    "array":[ 1, 2, 2, 1 ]
+  }
+}
